@@ -18,7 +18,10 @@
 	<!--This draws the Canvas on the webpage -->
       <canvas id="mycanvas"></canvas> 
     </p>
-    
+       <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas2> 
+    </p>
 </body>
 
 
@@ -47,9 +50,9 @@
     }};
 
     // Get the canvas that Processing-js will use
-    var canvas = document.getElementById("mycanvas"); 
+    var canvas2 = document.getElementById("mycanvas2"); 
     // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
-    var processingInstance = new Processing(canvas, sketchProc); 
+    var processingInstance = new Processing(canvas2, sketchProc); 
 	 
 	 noStroke();
 // the beautiful blue sky
@@ -57,7 +60,9 @@ background(82, 222, 240);
 
 // the starting size for the sun
 var sunSize = 30; 
-
+var sketchProc2 = function(processingInstance2) {
+     with (processingInstance2) {
+	     
 draw = function() {
    
    // The sun, a little circle on the horizon
@@ -70,9 +75,13 @@ draw = function() {
     
     sunSize = sunSize + 1;
     
-};
+}};
 
-
+ // Get the canvas that Processing-js will use
+    var canvas2 = document.getElementById("mycanvas2"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance2 = new Processing(canvas2, sketchProc2); 
+	 
  </script>
 
 </html>

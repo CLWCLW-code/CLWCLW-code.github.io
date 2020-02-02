@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Java på hjemmesiden</title>
+    <title>Java og HTML</title>
     <link href="https://clwclw-code.github.io/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -16,16 +16,16 @@
         <li>for det andet</li>
     </ul>
     <p align="center"> 
-	<!--This draws the Canvas on the webpage -->
+	<!--Dette tegner Canvas'et på hjemmesiden -->
       <canvas id="mycanvas"></canvas> 
     </p>
     
 </body>
 
 
- <!-- Run all the JavaScript stuff -->
- <!-- Include the processing.js library -->
- <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+ <!-- gennemløb alt JavaScript halløjet -->
+ <!-- inkludér  processing.js biblioteket -->
+ <!-- Se https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for forskelle, hvis der er en opdatering, så det ikke virker mere -->
  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
  
  <script>
@@ -49,9 +49,9 @@
         ellipse(153, 175, 10, 10);
     }};
 
-    // Get the canvas that Processing-js will use
+    // hent canvasset som Processing-js vil bruge
     var canvas = document.getElementById("mycanvas"); 
-    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    // giv funktionen sketchProc (defineret i myCode.js) til Processing's konstruktøren.
     var processingInstance = new Processing(canvas, sketchProc); 
  </script>
 
